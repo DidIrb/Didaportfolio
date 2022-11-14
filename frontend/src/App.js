@@ -1,13 +1,15 @@
-import AboutMe from "./sections/AboutMe";
-import Contact from "./sections/Contact"
-import Start from "./sections/Start";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
     <div className="App">
-      < AboutMe />
+      < Navbar />
+      {/* < AboutMe />
       < Contact />
-      < Start />
+      < Start /> */}
+      < Footer />
     </div>
   );
 }
