@@ -1,12 +1,9 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-
 const AboutMe = () => {
-  return (
-    <View>
-      <Text>AboutMe</Text>
-    </View>
-  )
+    return (
+        <div className="AboutMe">
+            <h2>About ME section</h2>
+        </div>
+    )
 }
 
 export default AboutMe
