@@ -226,11 +226,11 @@ h1, p {
 }
 .languages .Icon {
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .toolsused .Icon {
-  margin-left: 20px;
-  font-size: 60px;
+  margin-left: 25px;
+  font-size: 50px;
 }
 
 
@@ -238,11 +238,6 @@ h1, p {
 .Projects .last {
   display: flex;
   flex-direction: column;
-}
-.Projects .last p {
-  margin-top: 20px;
-  font-size: 13px;
-  font-style: italic;
 }
 
 .slider {
@@ -307,9 +302,47 @@ h1, p {
 }
 .project .wrapper {
   width: 55%;
-  border-radius: 15px;
-  border: 1px solid green;
-  height: 215px;
+  border-radius: 7px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  height: 218px;
+  position: relative;
+}
+.wrapper h2 {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.wrapper p {
+  font-size: 10px;
+  text-align: left;
+  font-weight: lighter;
+  font-style: italic;
+  width: 84%;
+  margin-top: 10px;
+  color: #fff;
+}
+.view-project {
+  position: absolute;
+  /* height: 40%; */
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.58);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.iconlinks {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconlinks .Icon {
+  font-size: 30px;
+  color: #fff;
 }
 
 @keyframes check {
@@ -323,13 +356,64 @@ h1, p {
 
 
 
+/* contact section */
 
+.contact .content {
+  display: flex;
+  flex-direction: row;
+}
+.link {
+  height: 40%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; 
+}
+.contact .middle {
+  width: 50%;
+}
+.wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  padding: 20px;
+}
+.wrapper form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper form input {
+  border: .8px dashed #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper form textarea {
+  border: .8px dashed #333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  height: 90px;
+}
+.wrapper button {
+  background-color: #1aac83;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
 
-
-
-
-
-
+}
 /* the footer section of the page */
 .footer {
   display: flex;

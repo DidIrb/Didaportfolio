@@ -83,7 +83,6 @@ const Sections = () => {
                             </div>
                         </div>
                         <div className="middle">
-
                             <Icon icon="academicons:cv-square" className="Icon" />
                         </div>
                         <div className="last">
@@ -103,13 +102,11 @@ const Sections = () => {
                                             <Icon icon="vscode-icons:folder-type-php" className="Icon" />
                                         </div>
                                         <div className="toolsused">
-                                        <Icon icon="logos:figma" className="Icon" />
-                                        <Icon icon="vscode-icons:folder-type-mongodb-opened" className="Icon" />
-                                        <Icon icon="simple-icons:express" className="Icon" />
-                                        <Icon icon="vscode-icons:file-type-reactts" className="Icon" />
-                                        <Icon icon="logos:nodejs" className="Icon" />
-
-
+                                            <Icon icon="logos:figma" className="Icon" />
+                                            <Icon icon="vscode-icons:folder-type-mongodb-opened" className="Icon" />
+                                            <Icon icon="simple-icons:express" className="Icon" />
+                                            <Icon icon="vscode-icons:file-type-reactts" className="Icon" />
+                                            <Icon icon="logos:nodejs" className="Icon" />
                                         </div>
                                     </div>
                                 </div>
@@ -148,38 +145,111 @@ const Sections = () => {
                                     <div className="project">
                                         <div className="wrapper">
                                             <h2>Project Name</h2>
-                                            <div className="view-project">
-                                                <p>This is a description of the project that has been done by the developer</p>
-                                                {/* adding icons and add links to the projects iteself */}
 
+                                            <div className="view-project">
+                                                <p> 
+                                                    This is a description of the project that has been done by the developer
+                                                    A simple web application that allow you to buy goods and sell goods.
+                                                </p>
+                                                {/* adding icons and add links to the projects iteself */}
+                                                <div className="iconlinks">
+                                                    <Icon icon="gg:media-live" className="Icon"/>
+                                                    <Icon icon="fe:github" className="Icon" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="project">
                                         <div className="wrapper">
+                                            <h2>Project Name</h2>
 
-                                        </div>
-                                    </div><div className="project">
-                                        <div className="wrapper">
-
-                                        </div>
-                                    </div><div className="project">
-                                        <div className="wrapper">
-
+                                            <div className="view-project">
+                                                <p> 
+                                                    This is a description of the project that has been done by the developer
+                                                    A simple web application that allow you to buy goods and sell goods.
+                                                </p>
+                                                {/* adding icons and add links to the projects iteself */}
+                                                <div className="iconlinks">
+                                                    <Icon icon="gg:media-live" className="Icon"/>
+                                                    <Icon icon="fe:github" className="Icon" />
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div className="project">
+                                        <div className="wrapper">
+                                            <h2>Project Name</h2>
+
+                                            <div className="view-project">
+                                                <p> 
+                                                    This is a description of the project that has been done by the developer
+                                                    A simple web application that allow you to buy goods and sell goods.
+                                                </p>
+                                                {/* adding icons and add links to the projects iteself */}
+                                                <div className="iconlinks">
+                                                    <Icon icon="gg:media-live" className="Icon"/>
+                                                    <Icon icon="fe:github" className="Icon" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="project">
+                                        <div className="wrapper">
+                                            <h2>Project Name</h2>
+
+                                            <div className="view-project">
+                                                <p> 
+                                                    This is a description of the project that has been done by the developer
+                                                    A simple web application that allow you to buy goods and sell goods.
+                                                </p>
+                                                {/* adding icons and add links to the projects iteself */}
+                                                <div className="iconlinks">
+                                                    <Icon icon="gg:media-live" className="Icon"/>
+                                                    <Icon icon="fe:github" className="Icon" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                  
                                 </div>
-
                             </div>
-                            {/* <p>Check github for more projects</p> */}
-
-
                         </div>
                     </div>
                 </div>
 
 
                 {/* section 5 the about section */}
+
+                <div className="section contact">
+                    <div className="content">
+                        <div className="link links1">
+                            <Icon icon="material-symbols:perm-phone-msg"   className="Icon"/>
+                            <Icon icon="tabler:go-game"   className="Icon"/>
+                            <Icon icon="academicons:cv-square" className="Icon" />
+                        </div>
+
+                        <div className="middle">  
+                            <div className="wrapper">
+                                <form action="">
+                                    <h1>Get In Touch</h1>
+                                    <br />
+                                    <input type="text" placeholder="Full Name" className="Name" />
+                                    <input type="text" placeholder="Email" className="Email"/>
+                                    <textarea name="message" id="message" >
+                                        write message here
+                                    </textarea>
+                                    <button className="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div className="link links2">
+                            <Icon icon="fa-brands:github-square" className="Icon" />
+                            <Icon icon="ic:sharp-mail"   className="Icon"/>
+                            <Icon icon="cib:linkedin"  className="Icon" />
+                        </div>
+                    </div>
+                </div>
+
 
 
             </div>
