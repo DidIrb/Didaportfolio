@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import designimage from '../assets/design.png'
 
 const Sections = () => {
@@ -72,7 +73,7 @@ const Sections = () => {
                             <div className="cont">
                                 <h1 >SKILLS</h1>
                                 <p>
-                                A software developer has a number of responsibilities and we all have to pick an area of specialty, I am a full stack developer and have skills in this areas
+                                    A software developer has a number of responsibilities and we all have to pick an area of specialty, I am a full stack developer and have skills in this areas
                                 </p>
                                 <div className="skillsets">
                                     <h2>Website Dev</h2>
@@ -82,19 +83,34 @@ const Sections = () => {
                             </div>
                         </div>
                         <div className="middle">
-                            cv
+
+                            <Icon icon="academicons:cv-square" className="Icon" />
                         </div>
                         <div className="last">
                             <div className="cardcontainer">
                                 <div className="farmiliarwith">
                                     <h3>TOOLS AND FRAMEWORKS USED</h3>
-                                    <p>There is no specific language that can exclusively do something, most programming languages
-                                        has the capacity to create whatever the user wants, as a developer I chose Javascript as my main language 
-                                        and have familiarized myself with the following.
+                                    <p> Most programming languages have the capacity to create whatever a developer wants,
+                                        I mostly use JavaScript to develop my application <i>Specialty</i>,
+                                        I am familiar with the following tools and languages.
                                     </p>
                                     <div className="tools">
                                         {/* adding the icons I know */}
+                                        <div className="languages">
+                                            <Icon icon="vscode-icons:file-type-js-official" className="Icon" />
+                                            <Icon icon="vscode-icons:file-type-html" className="Icon" />
+                                            <Icon icon="vscode-icons:file-type-css" className="Icon" />
+                                            <Icon icon="vscode-icons:folder-type-php" className="Icon" />
+                                        </div>
+                                        <div className="toolsused">
+                                        <Icon icon="logos:figma" className="Icon" />
+                                        <Icon icon="vscode-icons:folder-type-mongodb-opened" className="Icon" />
+                                        <Icon icon="simple-icons:express" className="Icon" />
+                                        <Icon icon="vscode-icons:file-type-reactts" className="Icon" />
+                                        <Icon icon="logos:nodejs" className="Icon" />
 
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -110,18 +126,54 @@ const Sections = () => {
                             <div className="cont">
                                 <h1 >PROJECTS</h1>
                                 <p>
-                                I love building applications and websites that serve a purpose, 
-                                from simple applicatios to complex e-commerce websites, I have worked on them all, 
-                                some of these projects are listed below.
+                                    I love building applications and websites that serve a purpose,
+                                    from simple applicatios to complex e-commerce websites, I have worked on them all,
+                                    some of these projects are listed below.
                                 </p>
                             </div>
                         </div>
                         <div className="middle">
-                            github repo
+                            <Icon icon="fa-brands:github-square" className="Icon" />
                         </div>
                         <div className="last">
                             {/* adding the slider for projects done */}
-                            
+                            <div className="slider">
+
+                                <input type="radio" name="slider" checked="checked" class="slider-nav" />
+                                <input type="radio" name="slider" class="slider-nav" />
+                                <input type="radio" name="slider" class="slider-nav" />
+                                <input type="radio" name="slider" class="slider-nav" />
+
+                                <div className="slider-inner">
+                                    <div className="project">
+                                        <div className="wrapper">
+                                            <h2>Project Name</h2>
+                                            <div className="view-project">
+                                                <p>This is a description of the project that has been done by the developer</p>
+                                                {/* adding icons and add links to the projects iteself */}
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="project">
+                                        <div className="wrapper">
+
+                                        </div>
+                                    </div><div className="project">
+                                        <div className="wrapper">
+
+                                        </div>
+                                    </div><div className="project">
+                                        <div className="wrapper">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            {/* <p>Check github for more projects</p> */}
+
+
                         </div>
                     </div>
                 </div>
