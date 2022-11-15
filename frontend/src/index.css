@@ -1,36 +1,233 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 :root {
   --primary: #1aac83;
   --error: #e7195a;
 }
 
 body {
-  background: #fff;
-  font-family: "Poppins";
+  font-family: 'Inter';
 }
+h1, p {
+  text-align: center;
+}
+/* the navigation section of page */
 .navbar {
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 10px;
-}
-.nav-items {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav-items {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
+
 .Items {
-font-family: 'Inter';
-font-weight: bold;
-font-size: 18px;
-line-height: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .mylogo {
   width: 80px;
   transform: rotate(-90deg);
-  padding: 0 50px 0 50px;
+  margin: 0 50px 0 50px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+.first {
+  width: 60%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.middle {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+.last {
+  height: 45%;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* .cont {
+  height: 30%;
+} */
+
+.innerbody {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* The body */
+
+.sections {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sections::-webkit-scrollbar {
+  display: none;
+}
+.section {
+  min-height: 100%;
+  width: 60%;
+}
+
+.backimg img {
+  max-height: 100%;
+  max-width: 100%;
+}
+/* section 1 */
+.scroller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+.scroller p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
+  width: auto;
+} 
+/* adding a scroll animation */
+
+.mouse {
+	width: 30px;
+	height: 54px;
+	border: 3px solid #333;
+	border-radius: 60px;
+	position: relative;
+}
+.mouse::before {
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 40px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 40px;
+	}
+}
+
+
+
+
+/* section 2 css */
+.cont h1{
+  margin-bottom: 20px;
+}
+
+.expound {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  position: relative;
+}
+.expound h3 {
+  padding-top: 20px;
+}
+
+.budtha img{
+  width: 250px;
+  
+}
+
+/* section 3 */
+.skillsets {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.skillsets h2 {
+  font-weight: 700;
+  font-size: 20px;
+  height: 20px;
+}
+.skillsets h2:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+.skillsets .highlight {
+  font-weight: bold;
+  font-size: 20px;
+  height: 40px;
+}
+
+.cardcontainer {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.farmiliarwith {
+  text-align: center;
+}
+.farmiliarwith h3 {
+  margin-bottom: 10px;
+}
+
+
+/* section 3 */
+
+
+
+
+
+
+/* the footer section of the page */
+.footer {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
 }
